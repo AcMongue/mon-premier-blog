@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-=g8=khcg4h_9%p(vf&7mjguqski&mx5q79my4q+5($u97&1f-b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','pythonanywhere.com'] # Liste des hôtes autorisés, ici on autorise l'accès depuis l'adresse IP locale et le domaine pythonanywhere.com c'est-à-dire le domaine où l'application sera hébergée.
+ALLOWED_HOSTS = ['127.0.0.1','pythonanywhere.com', 'ac7.pythonanywhere.com'] # Liste des hôtes autorisés, ici on autorise l'accès depuis l'adresse IP locale et le domaine pythonanywhere.com c'est-à-dire le domaine où l'application sera hébergée.
 
 
 
