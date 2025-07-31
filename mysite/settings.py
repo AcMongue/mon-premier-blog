@@ -107,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'fr-fr'
 
-TIME_ZONE = 'Africa/douala'
+TIME_ZONE = 'Africa/Douala'
 
 USE_I18N = True
 
