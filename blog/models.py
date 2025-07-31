@@ -9,7 +9,7 @@ class Article(models.Model): #création d'un modèle de données pour les articl
     texte_article=models.TextField()
     date_creation=models.DateTimeField(default=timezone.now) #on crée un champ de date et heure avec une valeur par défaut de la date et heure actuelle.
     date_publication=models.DateTimeField(blank=True, null=True) #on crée un champ de date et heure qui peut être vide ou nul, ce champ est utilisé pour la date de publication de l'article.
-    image_couverture=models.ImageField(upload_to='static/images/', blank=True, null=True) #on crée un champ d'image qui permet de télécharger une image de couverture pour l'article, upload_to='static/images/' indique le dossier où l'image sera stockée, blank=True et null=True signifie que ce champ peut être vide ou nul.
+   
 
     def publication(self): #methode pour publier l'article, elle met à jour la date de publication avec la date et heure actuel
     #le self fait référence à l'instance actuelle de l'article.
