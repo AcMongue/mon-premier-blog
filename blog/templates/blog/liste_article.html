@@ -7,7 +7,13 @@
         <header>
             <h1><a href="/">Blog Django Girls</a></h1>
         </header>
-
+        {%for article in articles %}
+            <article>
+                <time>Publié le: {{article.date_publication}}</time>
+                <h2><a href="">{{article.titre}}</a></h2>
+                <p>{{article.texte_article|linebreaksbr}}</p>
+            </article>
+        {% endfor %}
         <article>
             <time>publication: 14.06.2014, 12:14</time>
             <h2><a href="">Mon premier article</a></h2>
