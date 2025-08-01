@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,get_object_or_404
 from django.utils import timezone  # Importation de timezone pour gérer les dates et heures
 from .models import Article  # Importation du modèle Article pour interagir avec la base de données
 
@@ -7,3 +7,8 @@ def liste_article(request): # Vue pour afficher la liste des articles,le paramè
     articles=Article.objects.filter(date_publication__lte=timezone.now()).order_by('date_publication') # Récupère tous les articles dont la date de publication est inférieure ou égale à la date actuelle, triés par date de publication croissante.
     return render(request,'blog/liste_article.html',{'articles':articles}) #la fonction render est utilisée pour rendre un template HTML, ici on rend le template 'blog/liste_article.html', le premier paramètre est l'objet de requête, le deuxième paramètre est le nom du template à rendre.
 # Cette vue est associée à la route définie dans blog/urls.py, elle sera appelée lorsque l'utilisateur accède à la route correspondante.
+
+def detail_article(request,pk): # Vue pour afficher le détail d'un article, le paramètre id est l'identifiant de l'article à afficher.
+    article=get_object_or_404(Article,pk=pk) # Récupère l'article dont l'identifiant correspond à l'id passé en paramètre, si l'article n'existe pas, renvoie une erreur 404.
+    return render(request,'blog/detail_article.html',{'article':article}) # Rendu du template 'blog/detail_article.html' avec l'article récupéré, le paramètre 'article' est passé au template pour afficher les détails de l'article.
+# Cette vue est associée à la route définie dans blog/urls.py, elle sera appelée lorsque l'utilisateur accède à la route avec un identifiant d'article spécifique.

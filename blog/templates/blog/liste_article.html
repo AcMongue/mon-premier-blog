@@ -1,29 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Blog Django Girls</title>
-    </head>
-    <body>
-        <header>
-            <h1><a href="/">Blog Django Girls</a></h1>
-        </header>
-        {%for article in articles %}
-            <article>
-                <time>Publié le: {{article.date_publication}}</time>
-                <h2><a href="">{{article.titre}}</a></h2>
-                <p>{{article.texte_article|linebreaksbr}}</p>
-            </article>
-        {% endfor %}
-        <article>
-            <time>publication: 14.06.2014, 12:14</time>
-            <h2><a href="">Mon premier article</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </article>
+{%extends 'blog/base.html'%}
 
-        <article>
-            <time>publication: 14.06.2014, 12:14</time>
-            <h2><a href="">Mon second article</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </article>
-    </body>
-</html>
+{%block content %}
+    {% for article in articles%}
+    <article class="article">
+        <time class="date">
+            {{article.date_publication}}
+        </time>
+        <h2><a href="{%url 'blog/detail_article' pk=article.pk%}">{{article.titre}}</a></h2>
+        <p>{{article.texte_article|linebreaksbr}}</p>
+    </article>
+    {% endfor %}
+{%endblock%}
