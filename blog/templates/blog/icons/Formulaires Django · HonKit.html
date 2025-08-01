@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://tutorial.djangogirls.org/fr/django_forms/ -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Formulaires Django · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.7.5">
+        
+        
+        
+    
+    <style class="anchorjs"></style><link rel="stylesheet" href="./Formulaires Django · HonKit_files/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="./Formulaires Django · HonKit_files/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="./Formulaires Django · HonKit_files/plugin(1).css">
+                
+            
+                
+                <link rel="stylesheet" href="./Formulaires Django · HonKit_files/sidebar-ads.css">
+                
+            
+                
+                <link rel="stylesheet" href="./Formulaires Django · HonKit_files/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="./Formulaires Django · HonKit_files/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="./Formulaires Django · HonKit_files/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="./Formulaires Django · HonKit_files/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="./Formulaires Django · HonKit_files/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="./Formulaires Django · HonKit_files/website(1).css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+         
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://tutorial.djangogirls.org/gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="https://tutorial.djangogirls.org/gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    
+    
+    
+    
+
+<link href="./Formulaires Django · HonKit_files/bootstrap(1).min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="./Formulaires Django · HonKit_files/bootstrap.bundle.min.js.téléchargement" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <link rel="prev" href="https://tutorial.djangogirls.org/fr/extend_your_application/"><link rel="next" href="https://tutorial.djangogirls.org/fr/whats_next/"></head>
+    <body>
+        
+<div class="book without-animation with-summary font-size-2 font-family-1">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Tapez pour rechercher">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="https://tutorial.djangogirls.org/fr/">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/installation/">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/" style="display: none;">
+            
+                <a href="https://tutorial.djangogirls.org/fr/installation/#command-line">
+            
+                    
+                    Ligne de commande
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/" style="display: none;">
+            
+                <a href="https://tutorial.djangogirls.org/fr/installation/#python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/" style="display: none;">
+            
+                <a href="https://tutorial.djangogirls.org/fr/installation/#code-editor">
+            
+                    
+                    Éditeur de code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/" style="display: none;">
+            
+                <a href="https://tutorial.djangogirls.org/fr/installation/#virtualenv">
+            
+                    
+                    Environnement virtuel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/" style="display: none;">
+            
+                <a href="https://tutorial.djangogirls.org/fr/installation/#django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/" style="display: none;">
+            
+                <a href="https://tutorial.djangogirls.org/fr/installation/#git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/" style="display: none;">
+            
+                <a href="https://tutorial.djangogirls.org/fr/installation/#github-account">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/" style="display: none;">
+            
+                <a href="https://tutorial.djangogirls.org/fr/installation/#pythonanywhere-account">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/chromebook_setup/">
+            
+                    
+                    Installation (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/how_the_internet_works/">
+            
+                    
+                    Comment marche l'Internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/intro_to_command_line/">
+            
+                    
+                    Introduction à l'interface en ligne de commande
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/python_installation/">
+            
+                    
+                    Installation de Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/code_editor/">
+            
+                    
+                    L'éditeur de texte
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/python_introduction/">
+            
+                    
+                    Introduction à Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/django/">
+            
+                    
+                    Qu'est-ce que Django ?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/django_installation/">
+            
+                    
+                    Installation de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/django_start_project/">
+            
+                    
+                    Votre premier projet Django !
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/django_models/">
+            
+                    
+                    Les modèles dans Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/deploy/">
+            
+                    
+                    Déployer !
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/django_urls/">
+            
+                    
+                    Les URL de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/django_views/">
+            
+                    
+                    Vues Django – c'est l'heure de créer !
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/html/">
+            
+                    
+                    Introduction au HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/django_orm/">
+            
+                    
+                    Django ORM (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/dynamic_data_in_templates/">
+            
+                    
+                    Données dynamiques dans les templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/django_templates/">
+            
+                    
+                    Templates Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/css/">
+            
+                    
+                    CSS – donnez du style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/template_extending/">
+            
+                    
+                    Héritage de template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/extend_your_application/">
+            
+                    
+                    Finaliser votre application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.24" data-path="./">
+            
+                <a href="https://tutorial.djangogirls.org/fr/django_forms/">
+            
+                    
+                    Formulaires Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="https://tutorial.djangogirls.org/fr/whats_next/">
+            
+                    
+                    Et maintenant ?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Publié avec HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+    <div id="carouselAd" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        
+        
+        <div class="carousel-item  active">
+            <img src="./Formulaires Django · HonKit_files/lagos.jpg">
+          
+            <p>💖 Celebrate 10 years with us. Fill our survey! ✨</p>
+          
+          
+            <a href="https://surveys.jetbrains.com/s3/w-django-girls-survey-2024" class="btn" target="_blank">
+              Fill in now!
+            </a>
+           
+        </div>
+        
+        
+        <div class="carousel-item ">
+            <img src="./Formulaires Django · HonKit_files/django-logo-negative.png">
+          
+            <p>💖 The DSF supports the development of Django! ✨</p>
+          
+          
+            <a href="https://www.djangoproject.com/" class="btn" target="_blank">
+              Learn more!
+            </a>
+           
+        </div>
+        
+        
+        <div class="carousel-item ">
+            <img src="./Formulaires Django · HonKit_files/DO_Logo_Vertical_Blue.png">
+          
+            <p>💖 DigitalOcean simplifies cloud computing! ✨</p>
+          
+          
+            <a href="https://www.digitalocean.com/" class="btn" target="_blank">
+              Learn more!
+            </a>
+           
+        </div>
+        
+        
+        <div class="carousel-item ">
+            <img src="./Formulaires Django · HonKit_files/posthog.png">
+          
+            <p>💖 PostHog offers a suite of product analysis tools! ✨</p>
+          
+          
+            <a href="https://posthog.com/" class="btn" target="_blank">
+              Learn more!
+            </a>
+           
+        </div>
+        
+        
+        <div class="carousel-item ">
+            <img src="./Formulaires Django · HonKit_files/lincolnloop.png">
+          
+            <p>💖 Lincoln Loop provides scalable content platforms! ✨</p>
+          
+          
+            <a href="https://lincolnloop.com/" class="btn" target="_blank">
+              Learn more!
+            </a>
+           
+        </div>
+        
+        
+        <div class="carousel-item ">
+            <img src="./Formulaires Django · HonKit_files/torchbox.png">
+          
+            <p>💖 Torchbox, the creators of Wagtail! ✨</p>
+          
+          
+            <a href="https://torchbox.com/" class="btn" target="_blank">
+              Learn more!
+            </a>
+           
+        </div>
+        
+        
+        <div class="carousel-item ">
+            <img src="./Formulaires Django · HonKit_files/PA-logo.svg">
+          
+            <p>💖 Host, run, and code Python in the cloud! ✨</p>
+          
+          
+            <a href="https://www.pythonanywhere.com/" class="btn" target="_blank">
+              Learn more! 
+            </a>
+           
+        </div>
+        
+        
+        <div class="carousel-item ">
+            <img src="./Formulaires Django · HonKit_files/lagos.jpg">
+          
+            <p>💖 Support our work and donate to our project! ✨</p>
+          
+          
+            <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+              Donate now!
+            </a>
+           
+        </div>
+        
+        
+        <div class="carousel-item ">
+            <img src="./Formulaires Django · HonKit_files/tshirt.jpg">
+          
+            <p>💖 Want to support our work? ✨</p>
+          
+          
+            <a href="https://djangogirls.org/en/contact/" class="btn" target="_blank">
+              Contact Us!
+            </a>
+           
+        </div>
+        
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAd" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAd" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    
+  </div>
+
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <a class="btn pull-left js-toolbar-action" aria-label="" href="https://tutorial.djangogirls.org/fr/django_forms/#"><i class="fa fa-align-justify"></i></a><a class="btn pull-right js-toolbar-action" aria-label="GitHub" href="https://tutorial.djangogirls.org/fr/django_forms/#"><i class="fa fa-github"></i></a><div class="dropdown pull-left language-picker js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Change language" href="https://tutorial.djangogirls.org/fr/django_forms/#"><i class="fa fa-globe"></i></a><div class="dropdown-menu dropdown-right"><div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div></div></div><div class="dropdown pull-left font-settings js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Font Settings" href="https://tutorial.djangogirls.org/fr/django_forms/#"><i class="fa fa-font"></i></a><div class="dropdown-menu dropdown-right"><div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div><div class="buttons"><button class="button size-2 font-reduce">A</button><button class="button size-2 font-enlarge">A</button></div><div class="buttons"><button class="button size-2 ">Serif</button><button class="button size-2 ">Sans</button></div><div class="buttons"><button class="button size-3 ">White</button><button class="button size-3 ">Sepia</button><button class="button size-3 ">Night</button></div></div></div><h1 id="formulaires-django-1">
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="https://tutorial.djangogirls.org/fr/">Formulaires Django</a>
+    <a class="anchorjs-link " href="https://tutorial.djangogirls.org/fr/django_forms/#formulaires-django-1" aria-label="Anchor link for: formulaires django 1" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="formulaires-django">Formulaires Django<a class="anchorjs-link " href="https://tutorial.djangogirls.org/fr/django_forms/#formulaires-django" aria-label="Anchor link for: formulaires django" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h1>
+<p>La dernière chose que nous voulons faire sur notre site web, c'est créer une manière sympathique d'ajouter ou éditer des blog posts. L'interface d'administration (<code>/admin</code>) de Django est cool, mais elle est assez complexe à personnaliser et à rendre jolie. Les formulaires (<code>forms</code>) vont nous donner un pouvoir absolu sur notre interface : nous allons être capables de faire à peu près tout ce que nous pouvons imaginer !</p>
+<p>Ce qui est pratique avec les formulaires Django, c'est que nous pouvons aussi bien en définir un à partir de rien ou créer un <code>ModelForm</code> qui va enregistrer le résultat du formulaire dans un modèle.</p>
+<p>C'est la seconde solution que nous allons utiliser pour créer un formulaire pour notre modèle <code>Post</code>.</p>
+<p>Comme toutes les choses importantes dans Django, les formulaires ont leur propre fichier : <code>forms.py</code>.</p>
+<p>Nous allons devoir créer un fichier avec ce nom dans notre dossier <code>blog</code>.</p>
+<pre><code>blog
+   └── forms.py
+</code></pre><p>Ouvrez maintenant ce fichier dans l'éditeur de code et tapez le code suivant :</p>
+<p></p><p class="code-label">blog/forms.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django <span class="hljs-keyword">import</span> forms
+
+<span class="hljs-keyword">from</span> .models <span class="hljs-keyword">import</span> Post
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostForm</span>(<span class="hljs-params">forms.ModelForm</span>):</span>
+
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+        model = Post
+        fields = (<span class="hljs-string">'title'</span>, <span class="hljs-string">'text'</span>,)
+</code></pre>
+<p>Tout d'abord, nous avons besoin d'importer les formulaires Django (<code>from django import forms</code>), puis notre modèle <code>Post</code> (<code>from .models import Post</code>).</p>
+<p>Comme vous l'avez probablement deviné, <code>PostForm</code> est le nom de notre formulaire. Nous avons besoin d'indiquer à Django que ce formulaire est un <code>ModelForm</code> (pour que Django fasse certaines choses automatiquement pour nous). Pour cela, nous utilisons <code>forms.ModelForm</code>.</p>
+<p>Ensuite, nous avons la <code>class Meta</code> qui nous permet de dire à Django quel modèle il doit utiliser pour créer ce formulaire (<code>model = Post</code>).</p>
+<p>Enfin, nous précisions quel⋅s sont le⋅s champ⋅s qui doivent figurer dans notre formulaire. Dans notre cas, nous souhaitons que seuls <code>title</code> et <code>text</code> apparaissent dans notre formulaire. Nous obtiendrons les autres données différemment : par exemple, on s'attend à ce que l'auteur (<code>author</code>) soit la personne actuellement connectée (c'est à dire vous !) et que la date de création <code>created_date</code> soit générée automatiquement lors de la création du post (cf code que nous avons écrit).</p>
+<p>Et voilà, c'est tout ! Tout ce qu'il nous reste à faire, c'est d'utiliser ce formulaire dans une <em>vue</em> et de l'afficher dans un template.</p>
+<p>Nous allons donc une nouvelle fois suivre le processus suivant et créer : un lien vers la page, une URL, une vue et un template.</p>
+<h2 id="lien-vers-une-page-contenant-le-formulaire">Lien vers une page contenant le formulaire<a class="anchorjs-link " href="https://tutorial.djangogirls.org/fr/django_forms/#lien-vers-une-page-contenant-le-formulaire" aria-label="Anchor link for: lien vers une page contenant le formulaire" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Avant d'ajouter le lien, nous avons besoin d'icônes que nous allons utiliser comme boutons pour le lien. Pour ce tutoriel, téléchargez <a href="https://raw.githubusercontent.com/twbs/icons/main/icons/file-earmark-plus.svg" target="_blank">file-earmark-plus.svg</a> et enregistrez-le dans le dossier <code>blog/templates/blog/icons/</code></p>
+<blockquote>
+<p>Remarque : Pour télécharger l'image SVG, ouvrez le menu contextuel du lien (en cliquant avec le bouton droit de la souris) et sélectionnez "Enregistrer le lien sous". Dans la boîte de dialogue vous demandant où enregistrer le fichier, choisissez le répertoire <code>djangogirls</code> de votre projet Django, et à l'intérieur du sous-répertoire <code>blog/templates/blog/icons/</code>, et enregistrez le fichier à cet endroit.</p>
+</blockquote>
+<p>Il est temps d'ouvrir <code>blog/templates/blog/base.html</code> dans l'éditeur de code. Maintenant nous pouvons utiliser ce fichier d'icônes à l'intérieur du template de base comme suit. Dans l'élément <code>div</code> à l'intérieur de la section <code>header</code> , nous ajouterons un lien avant l'élément <code>h1</code>:</p>
+<p></p><p class="code-label">blog/templates/blog/base.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{% url 'post_new' %}"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"top-menu"</span>&gt;</span>
+    {% include './icons/file-earmark-plus.svg' %}
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>Remarquez que notre nouvelle vue s'appelle <code>post_new</code>. L'icône <a href="https://icons.getbootstrap.com/icons/file-earmark-plus/" target="_blank">SVG</a> est fournie par les <a href="https://icons.getbootstrap.com/" target="_blank">icônes Bootstrap</a> et elle affichera une icône de page avec le signe plus. Nous utilisons une directive de modèle Django appelée <code>include</code>. Cela injectera le contenu du fichier dans le template Django. Le navigateur web sait comment gérer ce type de contenu sans aucun traitement supplémentaire.</p>
+<blockquote>
+<p>Vous pouvez télécharger toutes les icônes Bootstrap <a href="https://github.com/twbs/icons/releases/download/v1.11.3/bootstrap-icons-1.11.3.zip" target="_blank">ici</a>. Décompressez le fichier et copiez tous les fichiers image SVG vers un nouveau dossier dans <code>blog/templates/blog/</code> intitulé <code>icons</code>. De cette façon, vous pouvez accéder à une icône comme <code>pencil-fill.svg</code> en référençant le chemin du fichier <code>blog/templates/blog/icons/pencil-fill.svg</code></p>
+</blockquote>
+<p>Après avoir ajouté cette ligne, votre fichier HTML devrait maintenant ressembler à ceci :</p>
+<p></p><p class="code-label">blog/templates/blog/base.html</p><p></p>
+<pre><code class="lang-html">{% load static %}
+<span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Django Girls blog<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'//fonts.googleapis.com/css?family=Lobster&amp;subset=latin,latin-ext'</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">type</span>=<span class="hljs-string">'text/css'</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{% static 'css/blog.css' %}"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page-header"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{% url 'post_new' %}"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"top-menu"</span>&gt;</span>
+                    {% include './icons/file-earmark-plus.svg' %}
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/"</span>&gt;</span>Django Girls Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content container"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col"</span>&gt;</span>
+                    {% block content %}
+                    {% endblock %}
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>Normalement, après avoir sauvegardé et rechargé la page <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000</a>, vous devriez encore tomber sur l'erreur <code>NoReverseMatch</code>. Est-ce le cas ? Très bien !</p>
+<h2 id="url">URL<a class="anchorjs-link " href="https://tutorial.djangogirls.org/fr/django_forms/#url" aria-label="Anchor link for: url" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Ouvrez le fichier <code>blog/urls.py</code> dans l'éditeur de code et ajoutez cette ligne :</p>
+<p></p><p class="code-label">blog/urls.py</p><p></p>
+<pre><code class="lang-python">path(<span class="hljs-string">'post/new/'</span>, views.post_new, name=<span class="hljs-string">'post_new'</span>),
+</code></pre>
+<p>Votre fichier doit maintenant ressembler à ceci :</p>
+<p></p><p class="code-label">blog/urls.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.urls <span class="hljs-keyword">import</span> path
+<span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> views
+
+urlpatterns = [
+    path(<span class="hljs-string">''</span>, views.post_list, name=<span class="hljs-string">'post_list'</span>),
+    path(<span class="hljs-string">'post/&lt;int:pk&gt;/'</span>, views.post_detail, name=<span class="hljs-string">'post_detail'</span>),
+    path(<span class="hljs-string">'post/new/'</span>, views.post_new, name=<span class="hljs-string">'post_new'</span>),
+]
+</code></pre>
+<p>Une fois la page rechargée, vous allez voir une <code>AttributeError</code>, ce qui est normal. Nous n'avons pas encore implémenté la vue <code>post_new</code>. Faisons-le maintenant.</p>
+<h2 id="la-vue-postnew">La vue post_new<a class="anchorjs-link " href="https://tutorial.djangogirls.org/fr/django_forms/#la-vue-postnew" aria-label="Anchor link for: la vue postnew" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Ouvrez maintenant le fichier <code>blog/views.py</code> dans l'éditeur de code et ajoutez les lignes suivantes avec celles du <code>from</code> qui existent déjà :</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> .forms <span class="hljs-keyword">import</span> PostForm
+</code></pre>
+<p>Puis dans la <em>vue</em> :</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span>(<span class="hljs-params">request</span>):</span>
+    form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">'blog/post_edit.html'</span>, {<span class="hljs-string">'form'</span>: form})
+</code></pre>
+<p>Afin de pouvoir créer un nouveau formulaire <code>Post</code>, nous avons besoin d'appeler la fonction <code>PostForm()</code> et de la passer au template. Nous reviendrons modifier cette <em>vue</em> plus tard, mais pour l'instant, créons rapidement un template pour ce formulaire.</p>
+<h2 id="template">Template<a class="anchorjs-link " href="https://tutorial.djangogirls.org/fr/django_forms/#template" aria-label="Anchor link for: template" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Nous avons à présent besoin de créer un fichier <code>post_edit.html</code> dans le dossier <code>blog/templates/blog</code> et de l'ouvrir dans l'éditeur de code. Afin que notre formulaire fonctionne, nous avons besoin de plusieurs choses :</p>
+<ul>
+<li>Nous avons besoin d'afficher le formulaire. Pour cela, nous n'avons qu'à utiliser <code>{{ form.as_p }}</code>.</li>
+<li>La ligne précédente va avoir besoin d'être entourée des balises HTML <code>&lt;form method="POST"&gt;...&lt;/form&gt;</code>.</li>
+<li>Nous avons besoin d'un bouton <code>Valider</code>. Nous allons le créer à l'aide d'un bouton HTML : <code>&lt;button type="submit"&gt;Valider&lt;/button&gt;</code>.</li>
+<li>Enfin, nous devons ajouter <code>{% csrf_token %}</code> juste après <code>&lt;form ...&gt;</code>. C'est très important car c'est ce qui va permettre de sécuriser votre formulaire ! Si vous oubliez ce détail, Django se plaindra lorsque vous essaierez de sauvegarder le formulaire:</li>
+</ul>
+<p><img src="./Formulaires Django · HonKit_files/csrf2.png" alt="CSFR Forbidden page"></p>
+<p>Ok, voyons maintenant à quoi devrait ressembler le HTML contenu dans le fichier <code>post_edit.html</code> :</p>
+<p></p><p class="code-label">blog/templates/blog/post_edit.html</p><p></p>
+<pre><code class="lang-html">{% extends 'blog/base.html' %}
+
+{% block content %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>New post<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"POST"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"post-form"</span>&gt;</span>{% csrf_token %}
+        {{ form.as_p }}
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"save btn btn-default"</span>&gt;</span>Save<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+{% endblock %}
+</code></pre>
+<p>Rafraîchissons la page ! Et voilà : le formulaire s'affiche !</p>
+<p><img src="./Formulaires Django · HonKit_files/new_form2.png" alt="New form"></p>
+<p>Mais attendez une minute! Lorsque vous taperez quelque chose dans les champs <code>title</code> et <code>text</code> et essayez de le sauvegarder, que se passera-t-il?</p>
+<p>Absolument rien ! Nous retombons sur la même page sauf qu'en plus, notre texte a disparu et aucun article ne semble avoir été créé. Que s'est-il passé ?</p>
+<p>La réponse est : rien ! Nous avons juste encore un peu de travail à accomplir. Retournons à notre <em>vue</em>.</p>
+<h2 id="sauvegarder-le-contenu-du-formulaire">Sauvegarder le contenu du formulaire<a class="anchorjs-link " href="https://tutorial.djangogirls.org/fr/django_forms/#sauvegarder-le-contenu-du-formulaire" aria-label="Anchor link for: sauvegarder le contenu du formulaire" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Ouvrez à nouveau <code>blog/views.py</code> dans l'éditeur de code. Actuellement, <code>post_new</code> n'est composé que des lignes de code suivantes :</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span>(<span class="hljs-params">request</span>):</span>
+    form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">'blog/post_edit.html'</span>, {<span class="hljs-string">'form'</span>: form})
+</code></pre>
+<p>Lorsque nous envoyons notre formulaire, nous revenons à la même vue. Cependant, nous récupérons les données dans <code>request</code>, et plus particulièrement dans <code>request.POST</code> (le nom "POST" n'a aucun lien avec nos "posts" de blog : il est lié au type de requête effectué à l'envoi des données). Vous rappelez-vous comment dans le fichier HTML, notre définition de la variable <code>&lt;form&gt;</code> avait la méthode <code>method="POST"</code>? Tous les champs du formulaire se trouvent maintenant dans <code>request.POST</code>. Veillez à ne pas renommer <code>POST</code> en quoi que ce soit d'autre : la seule autre valeur autorisée pour <code>method</code> est <code>GET</code>. Malheureusement, nous n'avons pas le temps de rentrer dans les détails aujourd'hui.</p>
+<p>Donc dans notre <em>vue</em> nous avons deux situations différentes à gérer : la première quand on accède à la page pour la première fois et nous voulons un formulaire vide, et la seconde quand on revient à la <em>vue</em> avec les données que l'on a saisies dans le formulaire. Pour gérer ces deux cas, nous allons utiliser une condition <code>if</code> (si) :</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> request.method == <span class="hljs-string">"POST"</span>:
+    [...]
+<span class="hljs-keyword">else</span>:
+    form = PostForm()
+</code></pre>
+<p>Il faut maintenant remplir à l'endroit des pointillés <code>[...]</code>. Si <code>method</code> contient <code>POST</code> alors on veut construire le <code>PostForm</code> avec les données du formulaire, n'est-ce pas ? Nous allons le faire comme cela :</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python">form = PostForm(request.POST)
+</code></pre>
+<p>La prochaine étape est de vérifier que le formulaire a été rempli correctement (tous les champs obligatoires ont été remplis et aucune valeur incorrecte n'a été envoyée). Nous allons faire ça en utilisant <code>form.is_valid()</code>.</p>
+<p>Testons donc si notre formulaire est valide et, si c'est le cas, sauvegardons-le !</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> form.is_valid():
+    post = form.save(commit=<span class="hljs-literal">False</span>)
+    post.author = request.user
+    post.published_date = timezone.now()
+    post.save()
+</code></pre>
+<p>En gros, nous effectuons deux choses ici : nous sauvegardons le formulaire grâce à <code>form.save</code> et nous ajoutons un auteur. Rappelez vous, il n'y avait pas de champ <code>author</code> dans le <code>PostForm</code> mais nous avons obligatoirement besoin d'un auteur pour que le formulaire que nous avons créé soit valide. <code>commit=False</code> signifie que nous ne voulons pas encore enregistrer notre modèle <code>Post</code>. Nous voulons d'abord ajouter un auteur. La plupart du temps, vous utiliserez <code>form.save()</code> sans <code>commit=False</code>. Mais ici nous en avons besoin. <code>post.save()</code> sauvegardera les changements, c'est-à-dire l'ajout d'un auteur. Et voilà, un nouveau post de blog est créé !</p>
+<p>Enfin, ce serait génial si nous pouvions tout de suite aller à la page <code>post_detail</code> du post de blog que nous venons de créer. Pour cela, nous avons besoin d'importer une dernière chose :</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> redirect
+</code></pre>
+<p>Ajoutez-le au tout début de votre fichier. Maintenant, nous allons ajouter la ligne qui signifie "aller à la page <code>post_detail</code> pour le nouveau post qui vient d'être créé":</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">return</span> redirect(<span class="hljs-string">'post_detail'</span>, pk=post.pk)
+</code></pre>
+<p><code>post_detail</code> est le nom de la vue où nous voulons aller. Rappelez-vous : une <em>vue</em> a besoin d'une variable <code>pk</code>. Afin de le passer à la vue, nous utilisons <code>pk=post.pk</code>, où <code>post</code> désigne le blog post nouvellement créé !</p>
+<p>Et si au lieu de parler, nous vous montrions à quoi ressemble maintenant notre <em>vue</em> ?</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span>(<span class="hljs-params">request</span>):</span>
+    <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">"POST"</span>:
+        form = PostForm(request.POST)
+        <span class="hljs-keyword">if</span> form.is_valid():
+            post = form.save(commit=<span class="hljs-literal">False</span>)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">'post_detail'</span>, pk=post.pk)
+    <span class="hljs-keyword">else</span>:
+        form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">'blog/post_edit.html'</span>, {<span class="hljs-string">'form'</span>: form})
+</code></pre>
+<p>Voyons si ça marche. Allez à l'adresse <a href="http://127.0.0.1:8000/post/new/" target="_blank">http://127.0.0.1:8000/post/new/</a>, ajoutez des valeurs dans les champs <code>title</code> et du <code>text</code>, sauvegardez ... et voilà ! Le nouveau post est bien créé et vous êtes redirigé vers la page <code>post_detail</code> !</p>
+<p>Vous avez peut-être remarqué que nous avons choisi une date de publication avant de sauvegarder le post. Nous en aurons besoin lorsque nous créerons le <em>publish button</em> (bouton publier) dans <strong>l'une des extensions du tutoriel Django Girls</strong> (en anglais).</p>
+<p>Encore bravo !</p>
+<blockquote>
+<p>Comme nous avons récemment utilisé l'interface d'administration de Django, le système pense que nous sommes toujours connectés. Cependant, il y a plusieurs cas qui peuvent amener un utilisateur à être déconnecté : fermer le navigateur, redémarrer la base de données, etc. Si jamais vous obtenez des erreurs lors de la création d'un post qui disent que vous n'êtes pas connecté, retournez sur la page d'administration présente à l'adresse <a href="http://127.0.0.1:8000/admin" target="_blank">http://127.0.0.1:8000/admin</a> et connectez vous à nouveau. Cependant, vous devinez bien que cette solution n'est pas suffisante à long terme. Afin de corriger ce problème, n'hésitez pas à faire la partie <strong>Devoir : ajouter de la sécurité à son site internet !</strong> qui est située juste après la partie principale du tutoriel.</p>
+</blockquote>
+<p><img src="./Formulaires Django · HonKit_files/post_create_error.png" alt="Logged in error"></p>
+<h2 id="validation-de-formulaire">Validation de formulaire<a class="anchorjs-link " href="https://tutorial.djangogirls.org/fr/django_forms/#validation-de-formulaire" aria-label="Anchor link for: validation de formulaire" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Maintenant, nous allons vous montrer à quel point les formulaires Django sont cools ! Un post de blog a besoin de champs <code>title</code> (titre) et <code>text</code> (texte). Dans notre modèle <code>Post</code>, nous n'avons pas signalé que ces champs n'étaient pas obligatoire (à l'inverse de <code>published_date</code>). Django s'attend donc à ce qu'ils soient remplis à chaque fois.</p>
+<p>Essayez de sauvegarder un formulaire sans mettre de <code>titre</code> ou de <code>texte</code>. Devinez ce qui va se passer !</p>
+<p><img src="./Formulaires Django · HonKit_files/form_validation2.png" alt="Form validation"></p>
+<p>Django va s'occuper de la validation : il va regarder si tous les champs de notre formulaire sont en adéquation avec notre modèle. C'est cool, non ?</p>
+<h2 id="éditer-un-formulaire">Éditer un formulaire<a class="anchorjs-link " href="https://tutorial.djangogirls.org/fr/django_forms/#%C3%A9diter-un-formulaire" aria-label="Anchor link for: éditer un formulaire" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Maintenant, nous savons comment ajouter un nouveau post. Comment faire pour en modifier un qui existe déjà ? C'est très similaire à ce que nous venons de faire. Tout d'abord, faisons rapidement quelques choses importantes. (Si vous ne comprenez pas quelque chose, vous devriez demander à votre entraîneur ou regarder les chapitres précédents, car nous avons déjà traité toutes ces étapes.)</p>
+<p>Tout d'abord, enregistrons l'icône qui représente le bouton d'édition. Téléchargez <a href="https://raw.githubusercontent.com/twbs/icons/main/icons/pencil-fill.svg" target="_blank">pencil-fill.svg</a> et enregistrez-le dans le dossier <code>blog/templates/blog/icons/</code>.</p>
+<p>Ouvrez <code>blog/templates/blog/post_detail.html</code> dans l'éditeur de code et ajoutez le code suivant dans l'élément <code>article</code>:</p>
+<p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">aside</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"actions"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{% url 'post_edit' pk=post.pk %}"</span>&gt;</span>
+      {% include './icons/pencil-fill.svg' %}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">aside</span>&gt;</span>
+</code></pre>
+<p>Votre template doit maintenant ressembler à ceci :</p>
+<p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p>
+<pre><code class="lang-html">{% extends 'blog/base.html' %}
+
+{% block content %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"post"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">aside</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"actions"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{% url 'post_edit' pk=post.pk %}"</span>&gt;</span>
+                {% include './icons/pencil-fill.svg' %}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">aside</span>&gt;</span>
+        {% if post.published_date %}
+            <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"date"</span>&gt;</span>
+                {{ post.published_date }}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+        {% endif %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+{% endblock %}
+</code></pre>
+<p>Ouvrez le fichier <code>blog/urls.py</code> dans l'éditeur de code et ajoutez cette ligne :</p>
+<p></p><p class="code-label">blog/urls.py</p><p></p>
+<pre><code class="lang-python">    path(<span class="hljs-string">'post/&lt;int:pk&gt;/edit/'</span>, views.post_edit, name=<span class="hljs-string">'post_edit'</span>),
+</code></pre>
+<p>Nous allons réutiliser le template de <code>blog/templates/blog/post_edit.html</code>. Il ne va donc nous manquer qu'une <em>vue</em>.</p>
+<p>Ouvrons <code>blog/views.py</code> dans l'éditeur de code et ajoutons à la toute fin du fichier :</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_edit</span>(<span class="hljs-params">request, pk</span>):</span>
+    post = get_object_or_404(Post, pk=pk)
+    <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">"POST"</span>:
+        form = PostForm(request.POST, instance=post)
+        <span class="hljs-keyword">if</span> form.is_valid():
+            post = form.save(commit=<span class="hljs-literal">False</span>)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">'post_detail'</span>, pk=post.pk)
+    <span class="hljs-keyword">else</span>:
+        form = PostForm(instance=post)
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">'blog/post_edit.html'</span>, {<span class="hljs-string">'form'</span>: form})
+</code></pre>
+<p>Vous ne trouvez pas que ça ressemble presque exactement à la vue de <code>post_new</code> ? Regardons un peu plus en détails. Tout d'abord, nous passons un paramètre <code>pk</code> supplémentaire. Ensuite, nous récupérons le modèle <code>Post</code> que nous souhaitons éditer à l'aide de <code>get_object_or_404(Post, pk=pk)</code>. Puis, lorsque nous créons un formulaire, nous passons ce post comme une <code>instance</code>, d'abord lorsque nous sauvegardons le formulaire…</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python">form = PostForm(request.POST, instance=post)
+</code></pre>
+<p>…Puis ensuite lorsque nous ouvrons le formulaire associé à ce post afin de l'éditer :</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python">form = PostForm(instance=post)
+</code></pre>
+<p>Alors, voyons si ça marche ! Allons à la page <code>post_detail</code>. Un bouton d'édition devrait apparaître dans le coin supérieur droit de la page :</p>
+<p><img src="./Formulaires Django · HonKit_files/edit_button2.png" alt="Edit button"></p>
+<p>Lorsque vous cliquez dessus, vous devez voir le formulaire du post de blog apparaître :</p>
+<p><img src="./Formulaires Django · HonKit_files/edit_form2.png" alt="Edit form"></p>
+<p>N'hésitez pas à changer le titre ou le texte et à enregistrer les modifications!</p>
+<p>Bravo ! Votre application s'enrichit de plus en plus de fonctionnalités !</p>
+<p>Si vous souhaitez en apprendre plus sur les formulaires Django, n'hésitez pas à consulter la documentation associée : <a href="https://docs.djangoproject.com/en/2.2/topics/forms/" target="_blank">https://docs.djangoproject.com/en/2.2/topics/forms/</a></p>
+<h2 id="sécurité">Sécurité<a class="anchorjs-link " href="https://tutorial.djangogirls.org/fr/django_forms/#s%C3%A9curit%C3%A9" aria-label="Anchor link for: sécurité" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>C’est génial de pouvoir créer de nouveaux posts juste en cliquant sur un lien ! Mais maintenant, toute personne visitant votre site sera en mesure de créer un nouveau post, et ce n'est peut-être pas ce que vous voulez. Faisons en sorte que les boutons apparaissent pour vous mais pas pour les autres.</p>
+<p>Ouvrez <code>blog/templates/blog/base.html</code> dans l'éditeur de code, trouvez notre <code>div</code> <code>page-header</code> et la balise ancre que vous y avez mis plus tôt. Ça doit ressembler à ça :</p>
+<p></p><p class="code-label">blog/templates/blog/base.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{% url 'post_new' %}"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"top-menu"</span>&gt;</span>
+    {% include './icons/file-earmark-plus.svg' %}
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>Nous allons y ajouter une autre balise <code>{% if %}</code> qui ne fera apparaitre le lien qu’aux utilisateurs⋅trices connecté⋅e⋅s avec les droits d'administration. C'est à dire pour le moment, seulement vous ! Changez la balise <code>&lt;a&gt;</code> comme ceci :</p>
+<p></p><p class="code-label">blog/templates/blog/base.html</p><p></p>
+<pre><code class="lang-html">{% if user.is_authenticated %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{% url 'post_new' %}"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"top-menu"</span>&gt;</span>
+        {% include './icons/file-earmark-plus.svg' %}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+{% endif %}
+</code></pre>
+<p>Ce <code>{% if %}</code> fait en sorte de n’envoyer le lien au navigateur que si l’utilisateur⋅trice demandant la page est connecté⋅e. Cela ne n'empêche pas complètement la création de nouveaux posts, mais c’est un bon début. Nous reviendrons sur les questions de sécurité dans les extensions du tutoriel.</p>
+<p>Rappelez-vous l'icône de modification que nous venons d'ajouter à notre page de détails? Nous souhaitons également ajouter les mêmes modifications, afin que les autres utilisateurs ne puissent pas modifier les publications existantes.</p>
+<p>Ouvrez le fichier <code>blog/templates/blog/post_detail.html</code> dans l'éditeur de code et trouvez la ligne suivante :</p>
+<p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{% url 'post_edit' pk=post.pk %}"</span>&gt;</span>
+    {% include './icons/pencil-fill.svg' %}
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>Changez-la en ceci:</p>
+<p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p>
+<pre><code class="lang-html">{% if user.is_authenticated %}
+     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-default"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{% url 'post_edit' pk=post.pk %}"</span>&gt;</span>
+        {% include './icons/pencil-fill.svg' %}
+     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+{% endif %}
+</code></pre>
+<p>Parce vous êtes sans doute déjà connecté⋅e⋅s, vous ne verrez aucune différence si vous rafraîchissez la page. Mais si vous chargez la page dans un navigateur web différent ou dans une fenêtre en mode "navigation privée" ou "incognito", vous verrez que le lien ne s'affiche plus, et l’icône non plus !</p>
+<h2 id="encore-un-petit-effort--déployons-">Encore un petit effort : déployons !<a class="anchorjs-link " href="https://tutorial.djangogirls.org/fr/django_forms/#encore-un-petit-effort--d%C3%A9ployons-" aria-label="Anchor link for: encore un petit effort  déployons " data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Nos modifications fonctionnent-elles sur PythonAnywhere ? Pour le savoir, déployons à nouveau !</p>
+<ul>
+<li>Tout d'abord, commitez votre nouveau code et pushez le à nouveau sur GitHub:</li>
+</ul>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git status
+$ git add .
+$ git status
+$ git commit -m "Added views to create/edit blog post inside the site."
+$ git pus
+</code></pre><ul>
+<li>Puis, dans la console bash de <a href="https://www.pythonanywhere.com/consoles/" target="_blank">PythonAnywhere</a>:</li>
+</ul>
+<p></p><p class="code-label">Ligne de commande PythonAnywhere</p><p></p>
+<pre><code>$ cd ~/&lt;your-pythonanywhere-domain&gt;.pythonanywhere.com
+$ git pull
+[...]
+</code></pre><p>(N’oubliez pas de remplacer <code>&lt;your-pythonanywhere-domain&gt;</code> avec votre propre sous-domaine PythonAnywhere, sans les chevrons.)</p>
+<ul>
+<li>Enfin, allez sur <a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank">"Web" page</a> (utilisez le bouton de menu en haut à droite de la console) et cliquez <strong>Reload</strong>. Actualisez votre blog <a href="https://subdomain.pythonanywhere.com/" target="_blank">https://subdomain.pythonanywhere.com</a> pour voir les changements.</li>
+</ul>
+<p>Et normalement c'est tout ! Félicitations ! :)</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title" id="results-matching"><span class="search-results-count"></span> results matching "<span class="search-query"></span>"<a class="anchorjs-link " href="https://tutorial.djangogirls.org/fr/django_forms/#results-matching" aria-label="Anchor link for: results matching" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title" id="no-results-matching">No results matching "<span class="search-query"></span>"<a class="anchorjs-link " href="https://tutorial.djangogirls.org/fr/django_forms/#no-results-matching" aria-label="Anchor link for: no results matching" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="https://tutorial.djangogirls.org/fr/extend_your_application/" class="navigation navigation-prev " aria-label="Previous page: Finaliser votre application">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="https://tutorial.djangogirls.org/fr/whats_next/" class="navigation navigation-next " aria-label="Next page: Et maintenant ?" style="margin-right: 15px;">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Formulaires Django","level":"1.24","depth":1,"next":{"title":"Et maintenant ?","level":"1.25","depth":1,"path":"whats_next/README.md","ref":"whats_next/README.md","articles":[]},"previous":{"title":"Finaliser votre application","level":"1.23","depth":1,"path":"extend_your_application/README.md","ref":"extend_your_application/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ads","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sidebar-ads":{"ads":[{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://surveys.jetbrains.com/s3/w-django-girls-survey-2024","description":"💖 Celebrate 10 years with us. Fill our survey! ✨","btnText":"Fill in now!"},{"imageUrl":"https://static.djangoproject.com/img/logos/django-logo-negative.png","url":"https://www.djangoproject.com/","description":"💖 The DSF supports the development of Django! ✨","btnText":"Learn more!"},{"imageUrl":"https://djangogirls.org/static/img/global/supporters/DO_Logo_Vertical_Blue.png","url":"https://www.digitalocean.com/","description":"💖 DigitalOcean simplifies cloud computing! ✨","btnText":"Learn more!"},{"imageUrl":"https://djangogirls.org/uploads/uploads/posthog.png","url":"https://posthog.com/","description":"💖 PostHog offers a suite of product analysis tools! ✨","btnText":"Learn more!"},{"imageUrl":"https://djangogirls.org/uploads/uploads/lincolnloop.png","url":"https://lincolnloop.com/","description":"💖 Lincoln Loop provides scalable content platforms! ✨","btnText":"Learn more!"},{"imageUrl":"https://djangogirls.org/uploads/uploads/torchbox.png","url":"https://torchbox.com/","description":"💖 Torchbox, the creators of Wagtail! ✨","btnText":"Learn more!"},{"imageUrl":"https://www.pythonanywhere.com/static/anywhere/images/PA-logo.svg","url":"https://www.pythonanywhere.com/","description":"💖 Host, run, and code Python in the cloud! ✨","btnText":"Learn more! "},{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},{"imageUrl":"https://djangogirls.org/static/img/global/donate/tshirt.jpg","url":"https://djangogirls.org/en/contact/","description":"💖 Want to support our work? ✨","btnText":"Contact Us!"}]}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.12","py_release":"3.12.3","py_min_version":"3.10","py_min_release":"3.10.13","pa_py_version":"3.10","django_version":"5.1.2"},"language":"fr","links":{},"gitbook":"*"},"file":{"path":"django_forms/README.md","mtime":"2025-03-12T15:59:53.507Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2025-03-12T16:00:30.943Z"},"basePath":"..","book":{"language":"fr"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="./Formulaires Django · HonKit_files/gitbook.js.téléchargement"></script>
+    <script src="./Formulaires Django · HonKit_files/theme.js.téléchargement"></script>
+    
+        
+        <script src="./Formulaires Django · HonKit_files/anchor.min.js.téléchargement"></script>
+        
+    
+        
+        <script src="./Formulaires Django · HonKit_files/anchor-style.js.téléchargement"></script>
+        
+    
+        
+        <script src="./Formulaires Django · HonKit_files/plugin.js.téléchargement"></script>
+        
+    
+        
+        <script src="./Formulaires Django · HonKit_files/plugin(1).js.téléchargement"></script>
+        
+    
+        
+        <script src="./Formulaires Django · HonKit_files/plugin(2).js.téléchargement"></script>
+        
+    
+        
+        <script src="./Formulaires Django · HonKit_files/bootstrap.min.js.téléchargement"></script>
+        
+    
+        
+        <script src="./Formulaires Django · HonKit_files/sectionx.js.téléchargement"></script>
+        
+    
+        
+        <script src="./Formulaires Django · HonKit_files/plugin(3).js.téléchargement"></script>
+        
+    
+        
+        <script src="./Formulaires Django · HonKit_files/search-engine.js.téléchargement"></script>
+        
+    
+        
+        <script src="./Formulaires Django · HonKit_files/search.js.téléchargement"></script>
+        
+    
+        
+        <script src="./Formulaires Django · HonKit_files/lunr.min.js.téléchargement"></script>
+        
+    
+        
+        <script src="./Formulaires Django · HonKit_files/search-lunr.js.téléchargement"></script>
+        
+    
+        
+        <script src="./Formulaires Django · HonKit_files/fontsettings.js.téléchargement"></script>
+        
+    
+
+    
+
+
+</body></html>
