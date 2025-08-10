@@ -4,10 +4,11 @@
     {% for article in articles%}
     <article class="article">
         <time class="date">
-            {{article.date_publication}}
+           Publié le {{article.date_publication}}
         </time>
-        <h2><a href="{%url 'blog/detail_article' pk=article.pk%}">{{article.titre}}</a></h2>
+        <h2><a href="{%url 'blog/detail_article' pk=article.pk%}">{{article.titre}}</a></h2> 
         <p>{{article.texte_article|linebreaksbr}}</p>
+        <p style="margin-top: 50px;">Rédigé par {{article.auteur|upper}}</p>  <!-- recuperation du nom de l'auteur qu'on met en majuscule -->
     </article>
     {% endfor %}
 {%endblock%}

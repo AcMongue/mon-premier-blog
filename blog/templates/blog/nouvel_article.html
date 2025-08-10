@@ -4,7 +4,7 @@
     <h2>Créer un nouvel article</h1>
     <form method="post" class="article-form">
         {% csrf_token %}
-        {{ form.as_p }}
+         {{ form.as_p }} <!--ici on signale que les champs du formulaire seront sous formes de  paragraphe -->
         <button type="submit" class="save btn btn-default">Publier l'article</button>
     </form>
 {%endblock%}

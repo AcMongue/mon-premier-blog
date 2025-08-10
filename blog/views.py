@@ -15,7 +15,7 @@ def detail_article(request,pk): # Vue pour afficher le détail d'un article, le 
 # Cette vue est associée à la route définie dans blog/urls.py, elle sera appelée lorsque l'utilisateur accède à la route avec un identifiant d'article spécifique.
 
 def nouvel_article(request):
-    if request.method == 'POST':
+    if request.method == 'POST': #Vérification de si la méthode de la requête est post
         form = ArticleForm(request.POST) # Si la méthode de la requête est POST, cela signifie que l'utilisateur a soumis le formulaire pour créer un nouvel article.
         if form.is_valid(): # Vérifie si le formulaire est valide, c'est-à-dire si tous les champs requis sont remplis correctement.
             article = form.save(commit=False) # Crée une instance de l'article à partir des
